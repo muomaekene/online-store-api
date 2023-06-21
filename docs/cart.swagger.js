@@ -1,13 +1,13 @@
 export const getCart = {
   tags: ['Cart'],
-  description: 'This route allow logged in user/seller/admin to get his cart',
+  description: 'This route assigns a cart to user/seller/admin',
   opeationId: 'getCart',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'en_MX'
+      example: 'en-US'
     }
   ],
   responses: {
@@ -131,7 +131,7 @@ export const addItemsToCart = {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'en_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
@@ -303,7 +303,7 @@ export const increaseProductQuantityByOne = {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'en_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
@@ -459,7 +459,7 @@ export const reduceProductQuantityByOne = {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'en_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {

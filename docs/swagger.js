@@ -91,18 +91,18 @@ const docs = {
     description: 'An API for ecommerce works built using NodeJS & MongoDB',
     version: '1.0.0',
     contact: {
-      name: 'Mahmoud Yasser',
-      email: 'mle.mahmoud.yasser@gmail.com',
-      url: 'https://github.com/Braineanear'
+      name: 'Ekene Muoma',
+      email: 'muomaekene@gmail.com',
+      url: 'https://github.com/muomaekene'
     }
   },
   servers: [
+    // {
+    //   url: 'https://e-commerce-a-p-i.herokuapp.com/api',
+    //   description: 'Production Server'
+    // },
     {
-      url: 'https://e-commerce-a-p-i.herokuapp.com/api',
-      description: 'Production Server'
-    },
-    {
-      url: 'http://localhost:8000/api',
+      url: 'http://localhost:4040/api',
       description: 'Development Server'
     }
   ],

@@ -3,14 +3,14 @@ export const signUp = {
     jwt: []
   },
   tags: ['Auth'],
-  description: 'This route allow you to sign up into the api',
+  description: 'This route lets users sign up for an account',
   opeationId: 'signUp',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'en_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
@@ -223,14 +223,14 @@ export const signIn = {
     jwt: []
   },
   tags: ['Auth'],
-  description: 'This route allow you to login into the api',
+  description: 'This route allows user login to their account',
   opeationId: 'signIn',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'ar_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
@@ -396,14 +396,14 @@ export const logout = {
     jwt: []
   },
   tags: ['Auth'],
-  description: 'This route allow you to logout from the api',
+  description: 'This route allows user logout of their account',
   opeationId: 'logout',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'en_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
@@ -424,7 +424,7 @@ export const logout = {
   },
   responses: {
     200: {
-      description: 'Logout from the api using you refresh token.',
+      description: 'Logout from the api using your refresh token.',
       content: {
         'application/json': {
           schema: {
@@ -472,14 +472,14 @@ export const generateTokens = {
   },
   tags: ['Auth'],
   description:
-    'This route allow the user with a refresh token to regenerate tokens when the access token expires',
+    'This route allows a user with a refresh token to regenerate tokens when the access token expires',
   opeationId: 'generateTokens',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'ar_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
@@ -568,14 +568,14 @@ export const forgotPassword = {
   },
   tags: ['Auth'],
   description:
-    'This route allow you to send email with the reset password link to reset the password you forgot',
+    'This route lets user send an email with the reset password link to reset a forgotten password',
   opeationId: 'forgotPassword',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'en_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
@@ -597,7 +597,7 @@ export const forgotPassword = {
   responses: {
     200: {
       description:
-        'A link is going now to be sent to you email to reset you password.',
+        'A link would now be sent to your email to reset your password.',
       content: {
         'application/json': {
           schema: {
@@ -609,7 +609,7 @@ export const forgotPassword = {
               },
               message: {
                 type: 'string',
-                example: 'Reset Password Link Sent Successfully.'
+                example: 'Password reset link sent successfully.'
               }
             }
           }
@@ -625,14 +625,14 @@ export const resetPassword = {
   },
   tags: ['Auth'],
   description:
-    'This route allow you to reset you password using the token you received in you email',
+    'This route allows you to reset your password using the token you received in you email',
   opeationId: 'resetPassword',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'ar_MX'
+      example: 'en-US'
     },
     {
       in: 'query',
@@ -663,7 +663,7 @@ export const resetPassword = {
   },
   responses: {
     200: {
-      description: 'Reset you password using the reset token.',
+      description: 'Reset your password using the reset token.',
       content: {
         'application/json': {
           schema: {
@@ -707,14 +707,14 @@ export const resetPassword = {
 
 export const changePassword = {
   tags: ['Auth'],
-  description: 'This route allow you to user to change his password',
+  description: 'This route allows user to change their password',
   opeationId: 'changePassword',
   parameters: [
     {
       in: 'header',
       name: 'Accept-Language',
       type: 'string',
-      example: 'ar_MX'
+      example: 'en-US'
     }
   ],
   requestBody: {
