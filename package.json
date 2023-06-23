@@ -1,9 +1,9 @@
 {
-  "name": "ecommerceapi",
-  "version": "1.0.0",
-  "description": "An API for ecommerce works built using NodeJS & MongoDB",
+  "name": "online-store-api",
+  "version": "1.0.1",
+  "description": "An API for ecommerce works built using NodeJS & MongoDB that I forked; I'm extending and using",
   "main": "src/server.js",
-  "author": "Mahmoud Yasser",
+  "author": "Ekene Muoma",
   "license": "ISC",
   "engines": {
     "node": ">=12.0.0"
@@ -76,5 +76,5 @@
     "prettier": "^2.4.0",
     "supertest": "^6.1.6"
   },
-  "repository": "https://github.com/Braineanear/EcommerceAPI.git"
+  "repository": "https://github.com/muomaekene/online-store-api.git"
 }
