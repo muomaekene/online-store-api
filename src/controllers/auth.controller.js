@@ -249,6 +249,7 @@ export const sendVerificationEmail = catchAsync(async (req, res) => {
 
   // 3) Sending verification email to user email
   await sendVerifyEmail(user.email, verifyEmailToken);
+  console.log(user.email);
 
   // 4) If everything is OK, send data
   return res.status(200).json({

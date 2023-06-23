@@ -31,7 +31,7 @@ export const signup = catchAsync(async (body, profileImage) => {
   if (profileImage === undefined) {
     return {
       type: 'Error',
-      message: 'profileImageRequired',
+      message: 'Profile image required',
       statusCode: 400
     };
   }
@@ -55,7 +55,7 @@ export const signup = catchAsync(async (body, profileImage) => {
   ) {
     return {
       type: 'Error',
-      message: 'fieldsRequired',
+      message: 'Fields required',
       statusCode: 400
     };
   }
@@ -64,7 +64,7 @@ export const signup = catchAsync(async (body, profileImage) => {
   if (password.length < 8) {
     return {
       type: 'Error',
-      message: 'passwordLength',
+      message: 'Password length',
       statusCode: 400
     };
   }
@@ -73,7 +73,7 @@ export const signup = catchAsync(async (body, profileImage) => {
   if (!['user', 'seller'].includes(role)) {
     return {
       type: 'Error',
-      message: 'roleRestriction',
+      message: 'Role restriction',
       statusCode: 400
     };
   }
@@ -84,7 +84,7 @@ export const signup = catchAsync(async (body, profileImage) => {
   if (isEmailTaken) {
     return {
       type: 'Error',
-      message: 'emailTaken',
+      message: 'Email is taken',
       statusCode: 409
     };
   }
@@ -130,7 +130,7 @@ export const signup = catchAsync(async (body, profileImage) => {
   return {
     type: 'Success',
     statusCode: 201,
-    message: 'successfulSignUp',
+    message: 'Sign up successful',
     user,
     tokens
   };
@@ -147,7 +147,7 @@ export const signin = catchAsync(async (email, password) => {
   if (!email || !password) {
     return {
       statusCode: 400,
-      message: 'emailPasswordRequired'
+      message: 'Email and password required'
     };
   }
 
@@ -158,7 +158,7 @@ export const signin = catchAsync(async (email, password) => {
   if (!user) {
     return {
       statusCode: 401,
-      message: 'incorrectEmailOrPassword'
+      message: 'Incorrect email or password'
     };
   }
 
@@ -168,7 +168,7 @@ export const signin = catchAsync(async (email, password) => {
   if (!isMatch) {
     return {
       statusCode: 401,
-      message: 'incorrectEmailOrPassword'
+      message: 'Incorrect email or password'
     };
   }
 
@@ -179,7 +179,7 @@ export const signin = catchAsync(async (email, password) => {
   return {
     type: 'Success',
     statusCode: 200,
-    message: 'successfulLogin',
+    message: 'Login successful',
     user,
     tokens
   };
@@ -202,7 +202,7 @@ export const logout = catchAsync(async (refreshToken) => {
     return {
       type: 'Error',
       statusCode: 401,
-      message: 'loginAgain'
+      message: 'Login again'
     };
   }
 
@@ -210,7 +210,7 @@ export const logout = catchAsync(async (refreshToken) => {
   return {
     type: 'Success',
     statusCode: 200,
-    message: 'successfulogout'
+    message: 'Logout successful'
   };
 });
 
@@ -239,7 +239,7 @@ export const refreshAuth = catchAsync(async (refreshToken) => {
     return {
       type: 'Error',
       statusCode: 404,
-      message: 'noUserFound'
+      message: 'No user found'
     };
   }
 
@@ -250,7 +250,7 @@ export const refreshAuth = catchAsync(async (refreshToken) => {
   return {
     type: 'Success',
     statusCode: 200,
-    message: 'successfulTokenGeneration',
+    message: 'Token generation successful',
     tokens
   };
 });
@@ -270,7 +270,7 @@ export const changePassword = catchAsync(
       return {
         type: 'Error',
         statusCode: 400,
-        message: 'passConfirm'
+        message: 'Password confirmation'
       };
     }
 
@@ -282,7 +282,7 @@ export const changePassword = catchAsync(
     if (!isMatch) {
       return {
         type: 'Error',
-        message: 'notSamePassword',
+        message: 'Not same password',
         statusCode: 400
       };
     }
@@ -297,7 +297,7 @@ export const changePassword = catchAsync(
     return {
       type: 'Success',
       statusCode: 200,
-      message: 'successfulPasswordChange'
+      message: 'Password change successful'
     };
   }
 );

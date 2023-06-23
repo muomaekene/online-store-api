@@ -4,3 +4,4 @@ package-lock.json
 config.env
 build
 build-docs
+.sh
