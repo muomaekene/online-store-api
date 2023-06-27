@@ -9,6 +9,7 @@ const connectDB = async () => {
   const DB = config.db.url.replace('<PASSWORD>', config.db.password);
 
   mongoose.set('autoIndex', true);
+  mongoose.set('strictQuery', false);
 
   const con = await mongoose.connect(DB, {
     useNewUrlParser: true,
