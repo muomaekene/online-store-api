@@ -15,16 +15,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#deployed-version">Demo</a>
-    </li>
-    <li>
       <a href="#key-features">Key Features</a>
-    </li>
-    <li>
-      <a href="#api-usage">API Usage</a>
-    </li>
-    <li>
-      <a href="#deployment">Deployment</a>
     </li>
     <li>
       <a href="#build-with">Build With</a>
@@ -37,10 +28,6 @@
     </li>
   </ol>
 </details>
-
-## Deployed Version
-
-Live demo (Feel free to visit) 👉 :  <a href="https://e-commerce-a-p-i.herokuapp.com">E-commerce API</a>
 
 ## Key Features
 
@@ -116,20 +103,6 @@ Live demo (Feel free to visit) 👉 :  <a href="https://e-commerce-a-p-i.herokua
   * Update Category Image [Admin]
   * Delete Category [Admin]
 * Multi-Language Support
-
-## API Usage
-
-Check [Ecommerce API Documentation](https://e-commerce-a-p-i.herokuapp.com/api-docs/#/) for more info.
-
-## Deployment
-
-The API is deployed with git into Heroku. Below are the steps taken:
-
-```
-git init
-git add -A
-git commit -m "Commit message"
-```
 
 ## Built With
 
