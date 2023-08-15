@@ -204,29 +204,3 @@ You can fork the app or you can git-clone the app into your local machine.
 ```
 $ docker-compose up -d
 ```
-
-## Known Bugs
-Feel free to email me at mle.mahmoud.yasser@gmail.com if you run into any issues or have questions, ideas or concerns.
-Please enjoy and feel free to share your opinion, constructive criticism, or comments about my work. Thank you! 🙂
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- CONTACT -->
-## Contact
-
-Twitter - [@Mahmoud03203227](https://twitter.com/Mahmoud03203227)
-
-Email - [mle.mahmoud.yasser@gmail.com]()
-
-Facebook - [MahmoudYasserMLE](https://www.facebook.com/MahmoudYasserMLE/)
-
-Project: [https://github.com/Braineanear/EcommerceAPI](https://github.com/Braineanear/EcommerceAPI)
