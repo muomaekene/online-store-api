@@ -35,16 +35,6 @@
     <li>
       <a href="#installation">Installation</a>
     </li>
-    <li>
-      <a href="#known-bugs">Known Bugs</a>
-    </li>
-    <li>
-      <a href="#contributing">Contributing</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-
   </ol>
 </details>
 
